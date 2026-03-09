@@ -55,6 +55,7 @@ item_id:
 
 | Field | Description |
 |-------|-------------|
+| `type` | Item definition type (`standard` by default) |
 | `nexo_id` | The Nexo item ID (from your Nexo items `.yml`) |
 | `name` | MiniMessage string for the item's display name |
 | `exclusive_line` | MiniMessage string shown at the bottom of the lore |
@@ -103,11 +104,12 @@ your_reward_key:
 
 ```
 src/main/java/com/blockymmc/rainfall/
-├── RainfallPlugin.java          # Plugin entry point, loads crate configs on enable
+├── RainfallPlugin.java              # Plugin entry point, holds registry instance
 ├── GiveCommand.java             # /rainfall command handler
 └── items/
-    ├── ItemDefinition.java      # Data class for a single item's config
-    └── SeasonalItemRegistry.java # Loads YAMLs, builds ItemStacks
+    ├── ItemDefinition.java          # Interface: all item types implement build()
+    ├── StandardItemDefinition.java  # Standard seasonal item (Nexo + vanilla enchants + AE mystery enchant)
+    └── SeasonalItemRegistry.java    # Loads YAMLs, dispatches by type, holds item map
 
 src/main/resources/
 ├── plugin.yml

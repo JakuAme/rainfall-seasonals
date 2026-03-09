@@ -10,6 +10,12 @@ import org.bukkit.inventory.ItemStack;
 
 public class GiveCommand implements CommandExecutor {
 
+    private final SeasonalItemRegistry registry;
+
+    public GiveCommand(SeasonalItemRegistry registry) {
+        this.registry = registry;
+    }
+
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         if (args.length < 2) {
@@ -26,12 +32,12 @@ public class GiveCommand implements CommandExecutor {
             return true;
         }
 
-        if (!SeasonalItemRegistry.exists(itemId)) {
+        if (!registry.exists(itemId)) {
             sender.sendMessage("Unknown item: " + itemId);
             return true;
         }
 
-        ItemStack item = SeasonalItemRegistry.build(itemId);
+        ItemStack item = registry.build(itemId);
         if (item == null) {
             sender.sendMessage("Failed to build item: " + itemId + " (Nexo item not found?)");
             return true;

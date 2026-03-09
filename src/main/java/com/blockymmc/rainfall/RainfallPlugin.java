@@ -8,13 +8,15 @@ import java.io.File;
 public class RainfallPlugin extends JavaPlugin {
 
     private static RainfallPlugin instance;
+    private SeasonalItemRegistry registry;
 
     @Override
     public void onEnable() {
         instance = this;
+        registry = new SeasonalItemRegistry(getLogger());
         saveDefaultCrates();
-        SeasonalItemRegistry.loadFromFolder(new File(getDataFolder(), "crates"));
-        getCommand("rainfall").setExecutor(new GiveCommand());
+        registry.load(new File(getDataFolder(), "crates"));
+        getCommand("rainfall").setExecutor(new GiveCommand(registry));
         getLogger().info("Rainfall enabled.");
     }
 
@@ -33,5 +35,9 @@ public class RainfallPlugin extends JavaPlugin {
 
     public static RainfallPlugin getInstance() {
         return instance;
+    }
+
+    public SeasonalItemRegistry getRegistry() {
+        return registry;
     }
 }
