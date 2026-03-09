@@ -1,0 +1,4 @@
+com\blockymmc\rainfall\GiveCommand.class
+com\blockymmc\rainfall\items\ItemDefinition.class
+com\blockymmc\rainfall\RainfallPlugin.class
+com\blockymmc\rainfall\items\SeasonalItemRegistry.class
