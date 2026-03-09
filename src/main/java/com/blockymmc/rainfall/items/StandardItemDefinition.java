@@ -8,6 +8,7 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.format.NamedTextColor;
 import net.kyori.adventure.text.format.TextDecoration;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
@@ -75,6 +76,19 @@ public class StandardItemDefinition implements ItemDefinition {
         int level = EnchantTierRoller.roll(mysteryEnchantMaxLevel);
         item = AEAPI.applyEnchant(mysteryEnchant, level, item);
         item = AEAPI.organizeEnchants(item);
+
+        if (level == mysteryEnchantMaxLevel) {
+            ItemMeta aeMeta = item.getItemMeta();
+            List<Component> lore = aeMeta.lore();
+            if (lore != null) {
+                LegacyComponentSerializer legacy = LegacyComponentSerializer.legacySection();
+                lore.replaceAll(line -> AEAPI.isEnchantLine(legacy.serialize(line))
+                    ? line.decoration(TextDecoration.BOLD, true).decoration(TextDecoration.ITALIC, false)
+                    : line);
+                aeMeta.lore(lore);
+                item.setItemMeta(aeMeta);
+            }
+        }
 
         List<Component> vanillaLines = new ArrayList<>();
         for (Map.Entry<Enchantment, Integer> entry : vanillaEnchants.entrySet()) {

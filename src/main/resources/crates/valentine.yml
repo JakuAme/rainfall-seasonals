@@ -1,6 +1,6 @@
 valentine_helmet:
   nexo_id: valentineroses_helmet
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Helmet</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Helmet ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: sweetresolve
   mystery_min: 1
@@ -16,7 +16,7 @@ valentine_helmet:
 
 valentine_chestplate:
   nexo_id: valentineroses_chestplate
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Chestplate</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Chestplate ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: heartguard
   mystery_min: 1
@@ -31,7 +31,7 @@ valentine_chestplate:
 
 valentine_leggings:
   nexo_id: valentineroses_leggings
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Leggings</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Leggings ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: hurtfullove
   mystery_min: 1
@@ -46,7 +46,7 @@ valentine_leggings:
 
 valentine_boots:
   nexo_id: valentineroses_boots
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Boots</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Boots ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: lovebound
   mystery_min: 1
@@ -63,7 +63,7 @@ valentine_boots:
 
 valentine_sword:
   nexo_id: valentine_heart_metal_animated_set_sword
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Sword</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Sword ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: heartbreak
   mystery_min: 1
@@ -79,7 +79,7 @@ valentine_sword:
 
 valentine_pickaxe:
   nexo_id: valentine_heart_metal_animated_set_pickaxe
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Pickaxe</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Pickaxe ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: cupidsfortune
   mystery_min: 1
@@ -92,7 +92,7 @@ valentine_pickaxe:
 
 valentine_shovel:
   nexo_id: valentine_heart_metal_animated_set_shovel
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Shovel</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Shovel ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: luckylove
   mystery_min: 1
@@ -105,7 +105,7 @@ valentine_shovel:
 
 valentine_axe:
   nexo_id: valentine_heart_metal_animated_set_axe
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Axe</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Axe ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: thornwoodcleave
   mystery_min: 1
@@ -120,7 +120,7 @@ valentine_axe:
 
 valentine_hoe:
   nexo_id: valentine_heart_metal_animated_set_hoe
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Hoe</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Hoe ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: bloomingharvest
   mystery_min: 1
@@ -133,7 +133,7 @@ valentine_hoe:
 
 valentine_bow:
   nexo_id: valentine_heart_metal_animated_set_bow
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Bow</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Bow ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: cupidssting
   mystery_min: 1
@@ -146,7 +146,7 @@ valentine_bow:
 
 valentine_crossbow:
   nexo_id: valentine_heart_metal_animated_set_crossbow
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crossbow</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crossbow ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: cupidssting
   mystery_min: 1
@@ -159,7 +159,7 @@ valentine_crossbow:
 
 valentine_fishing_rod:
   nexo_id: valentine_heart_metal_animated_set_fishing_rod
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Fishing Rod</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Fishing Rod ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: heartstrings
   mystery_min: 1
@@ -172,7 +172,7 @@ valentine_fishing_rod:
 
 valentine_shield:
   nexo_id: valentine_heart_metal_animated_set_shield
-  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Shield</gradient>"
+  name: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Shield ❤</gradient>"
   exclusive_line: "<gradient:#FD57FF:#FFCAFF:#FD57FF>❤ Valentine Crate Exclusive ❤</gradient>"
   mystery_enchant: thornedheart
   mystery_min: 1

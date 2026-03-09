@@ -18,10 +18,11 @@ Rainfall intercepts this, looks up the item definition from its YAML config, and
 2. **Vanilla enchants** — applies all enchants at their correct levels via `addUnsafeEnchantment`
 3. **Gradient item name** — sets a MiniMessage gradient name (non-italic) via Adventure API
 4. **Hides vanilla enchant lore** — uses `ItemFlag.HIDE_ENCHANTS` so Minecraft doesn't auto-generate enchant tooltips
-5. **Mystery enchant** — applies a random-level AdvancedEnchantments enchant via `AEAPI.applyEnchant()`, with level drawn uniformly between `mystery_min` and `mystery_max`
+5. **Mystery enchant** — applies a weighted-random-level AdvancedEnchantments enchant via `AEAPI.applyEnchant()`. Level is drawn using hardcoded weighted tables (supporting max tier 5 and 10) — lower tiers are more common, max tier is rare
 6. **AE lore organization** — calls `AEAPI.organizeEnchants()` to sort AE lore into its groups
-7. **Vanilla enchant lore** — manually appends styled gray `✦ Enchant Level` lines in a fixed display order
-8. **Exclusive lore line** — appends a blank line + a gradient "Crate Exclusive" footer at the bottom
+7. **Max tier bold** — if the rolled level equals `mystery_max`, all AE enchant lore lines are bolded to visually distinguish a max tier roll
+8. **Vanilla enchant lore** — manually appends styled gray `✦ Enchant Level` lines in YAML definition order
+9. **Exclusive lore line** — appends a blank line + a gradient "Crate Exclusive" footer at the bottom
 
 ---
 
