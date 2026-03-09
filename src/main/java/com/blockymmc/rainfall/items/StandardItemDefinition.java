@@ -17,7 +17,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
 public class StandardItemDefinition implements ItemDefinition {
@@ -73,7 +72,7 @@ public class StandardItemDefinition implements ItemDefinition {
         meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
         item.setItemMeta(meta);
 
-        int level = ThreadLocalRandom.current().nextInt(mysteryEnchantMinLevel, mysteryEnchantMaxLevel + 1);
+        int level = EnchantTierRoller.roll(mysteryEnchantMaxLevel);
         item = AEAPI.applyEnchant(mysteryEnchant, level, item);
         item = AEAPI.organizeEnchants(item);
 
